@@ -1,131 +1,83 @@
-body {
+
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.btn-lg label{
+  font-size: 16px;
+  padding: 13px 4px;
+  width: 120px;
+}
+.btn-m label{
+  font-size: 15px;
+  padding: 12px 3px;
+  width: 100px;
+}
+.btn-s label{
   font-size: 14px;
+  padding: 11px 2px;
+  width: 80px;
 }
-.no1{
-  display:table
-}
-
-.no1-1{
-  display:table-cell;
-  color: #ffffff;
-	background: #c0265b;
-  border: solid 0.5px #d3d3d3;
-	display: table-cell;
-	vertical-align: middle;
+.btn-x label{
+  font-size: 13px;
+  padding: 10px 1px;
+  width: 60px;
 }
 
-.no1-2{
-  display:table-cell;
-  border: solid 0.5px #d3d3d3;
-	display: table-cell;
-	vertical-align: middle;
+.btn-group input{
+	display: none;
 }
-
-/* 後々の便宜上ここでもnthchild使う */
-.q1-1 > .no1:nth-child(odd){
-  background-color: #dcdcdc;
-}
-
-
-.leftcell {
-  width: 200px;
-  height: 30px;
-  padding: 2px;
-}
-
-.rightcell {
-  width: 700px;
-  height: 30px;
-  padding: 2px;
-}
-
-.parent{
-  background-color: #fffaf0;
-  width: 300px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #aaa;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.inner{
-  padding: 5px;
-  width: 240px;
-  display: inline-block;
-}
-
-.q2{
-  width:80%;
-  border:solid 1px #aaa;
-  margin: 10px;
-}
-ul{
-  margin:0px 0px 0px -80px;
-}
-li{
-  margin:25px;
-  padding:10px;
-  list-style:none;
-  background:#cceffc;
-  opacity: 0.7;
-  border-radius: 12px;
-}
-
-.q3-1 > .no1:nth-child(odd){
-  background-color: #dcdcdc;
-}
-
-.q3-2 > .no1:nth-child(4n+3){
-  background-color: #dcdcdc;
-}
-
-.sns {
-  background-color: #0366d6;
-  width:170px;
-  color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  padding: 3px;
-
-}
-
-.sns::before {
-	content:"";
-	display:inline-block;
-	width:15px;
-	height:15px;
-	background:url(../img/facebook.png) no-repeat;
-	background-size:contain;
-  vertical-align: middle;
-  padding-bottom: 2px;
-}
-
-.sns::after {
-	content:"";
-	display:inline-block;
-	width:15px;
-	height:15px;
-	background:url(../img/twitter.png) no-repeat;
-	background-size:contain;
-  vertical-align: middle;
-}
-
-.q5 {
-  display: table;
-}
-
-.facebook {
-  border: solid 0.5px #808080;
-  display: table-cell;
-	width: 130px;
-	height: 130px;
-	vertical-align: middle;
+.btn-group label{
+	display: block;
+	float: left;
+  border: 1px solid #abb2b7;
 	text-align: center;
-  border-radius: 6px;
+}
+.btn-group label:first-of-type{
+	border-radius: 5px 0 0 5px;
+}
+.btn-group label:last-of-type{
+	border-radius: 0 5px 5px 0;
+}
+.btn-group input[type="radio"]:checked + label {
+	background-color: #a1b91d;
+	color: #fff;
 }
 
-.facebook:hover {
-background-color: #dcdcdc;
+
+.alert {
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  padding: 3px;
+  margin: 3px;
+  font-size: 6px;
+  font-weight: bold;;
+  text-align: center;
+}
+
+.alert-default {
+  background-color: #696969;
+}
+
+.alert-primary {
+  background-color: #0066CC;
+}
+
+.alert-success {
+  background-color: #33CC66;
+}
+
+.alert-info {
+  background-color: #00CCFF;
+}
+
+.alert-warning {
+  background-color: #FFA500;
+}
+
+.alert-danger {
+  background-color: #FF3333;
 }

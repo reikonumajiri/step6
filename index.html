@@ -5,134 +5,116 @@
     <title>frontend中級研修</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <meta name="description" content="frontend中級研修 step1">
+    <meta name="description" content="frontend中級研修 step2">
     <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
-    <h3>問題1.『上下左右中央揃え』</h3>
+    <h3>問題1.bootstrapのbutton groupのsizingを自分でCSS作成</h3>
       <div class="q1-1">
-        問題1-1<br/>
-            <div class="no1">
-                  <p class="no1-1 leftcell">年月</p>
-                  <p class="no1-1 rightcell">会社沿革</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2012年4月</p>
-                  <p class="no1-2 rightcell">株式会社FiNC（代表取締役社長 溝口勇児）設立</p>
-            </div>
-      </div><br/>
+          <div class="btn-group btn-lg clearfix">
+              <input type="radio" name="s3" id="select1" checked="">
+              <label for="select1">Left</label>
+              <input type="radio" name="s3" id="select2" >
+              <label for="select2">Middle</label>
+              <input type="radio" name="s3" id="select3">
+              <label for="select3">Right</label>
+          </div><br/>
+
+
+          <div class="btn-group btn-m clearfix">
+              <input type="radio" name="s3" id="select4" checked="">
+              <label for="select4">Left</label>
+              <input type="radio" name="s3" id="select5">
+              <label for="select5">Middle</label>
+              <input type="radio" name="s3" id="select6">
+              <label for="select6">Right</label>
+          </div><br/>
+
+          <div class="btn-group btn-s clearfix">
+              <input type="radio" name="s3" id="select7" checked="">
+              <label for="select7">Left</label>
+              <input type="radio" name="s3" id="select8">
+              <label for="select8">Middle</label>
+              <input type="radio" name="s3" id="select9">
+              <label for="select9">Right</label>
+          </div><br/>
+
+          <div class="btn-group btn-x clearfix">
+              <input type="radio" name="s3" id="select10" checked="">
+              <label for="select10">Left</label>
+              <input type="radio" name="s3" id="select11">
+              <label for="select11">Middle</label>
+              <input type="radio" name="s3" id="select12">
+              <label for="select12">Right</label>
+          </div><br/>
+      </div>
 
       <div class="q1-2">
-        問題1-2<br/>
-            <div class="parent">
-                <img src="img/img.png" alt="画像">
-              <div class="inner">
-                  <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                  <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                  <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+              <div class="alert alert-default" role="alert">
+                Default
               </div>
-            </div>
-      </div><br/>
-
-    <h3>問題2.『ネガティブマージン』の実装</h3>
-      <div class="q2">
-             <ul>
-               <li>list1</li>
-               <li>list2</li>
+              <div class="alert alert-primary" role="alert">
+                Primary
+              </div>
+              <div class="alert alert-success" role="alert">
+                Success
+              </div>
+              <div class="alert alert-info" role="alert">
+                Info
+              </div>
+              <div class="alert alert-warning" role="alert">
+                Warning
+              </div>
+              <div class="alert alert-danger" role="alert">
+                Danger
+              </div>
+      </div>
+    <h3>問題2. bootstrapのlabelを自分でCSS作成</h3>
+      <div class="q2-1">
+        1. 以下のスクショを見て、class組みのみを行う<br/>
+            <ul>
+              <li>container</li>
+                <ul>
+                  <li>tab</li>
+                  <li>tab_item</li>
+                  <li>tab_content</li>
+                    <ul>
+                      <li>title</li>
+                      <li>description</li>
+                    </ul>
+                </ul>
             </ul>
-      </div><br/>
 
+            2. 以下のスクショを見て、class組みのみを行う<br/>
+                <ul>
+                  <li>container</li>
+                    <ul>
+                      <li>column</li>
+                      <li>feature</li>
+                        <ul>
+                          <li>title</li>
+                          <li>description</li>
+                        </ul>
+                    </ul>
+                </ul>
 
-    <h3>問題3.『◯番目の要素にCSSを適用する』 </h3>
-      <div class="q3-1">
-        問題3-1<br/>
-            <div class="no1">
-                  <p class="no1-1 leftcell">年月</p>
-                  <p class="no1-1 rightcell">会社沿革</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2012年4月</p>
-                  <p class="no1-2 rightcell">株式会社FiNC（代表取締役社長 溝口勇児）設立</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2012年4月</p>
-                  <p class="no1-2 rightcell">東京都の選考に通り、東京都中央区海岸のライフサイエンスインキュベーションセンターに入居</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2012年5月</p>
-                  <p class="no1-2 rightcell">Table fot Twoとの取り組みが世界経済フォーラムで発表</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2013年7月</p>
-                  <p class="no1-2 rightcell">東京都中央区永田町に「完全個室・成果保証型プライベートジム」開設</p>
-            </div>
+            3. 以下のスクショを見て、class組みのみを行う<br/>
+            <ul>
+              <li>container</li>
+                <ul>
+                  <li>column</li>
+                  <li>innner_pict</li>
+                  <li>innner_topic</li>
+                    <ul>
+                      <li>title</li>
+                      <li>description</li>
+                      <li>publishtime</li>
 
-      </div><br/>
-
-
-      <div class="q3-2">
-        問題3-1<br/>
-            <div class="no1">
-                  <p class="no1-1 leftcell">年月</p>
-                  <p class="no1-1 rightcell">会社沿革</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2012年4月</p>
-                  <p class="no1-2 rightcell">株式会社FiNC（代表取締役社長 溝口勇児）設立</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2012年4月</p>
-                  <p class="no1-2 rightcell">東京都の選考に通り、東京都中央区海岸のライフサイエンスインキュベーションセンターに入居</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2012年5月</p>
-                  <p class="no1-2 rightcell">Table fot Twoとの取り組みが世界経済フォーラムで発表</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2013年7月</p>
-                  <p class="no1-2 rightcell">東京都中央区永田町に「完全個室・成果保証型プライベートジム」開設</p>
-            </div>
-            <div class="no1">
-                  <p class="no1-2 leftcell">2014年3月</p>
-                  <p class="no1-2 rightcell">完全成果保証のダイエットサービス「FiNCダイエット家庭教師」リリース</p>
-            </div>
-
-      </div><br/>
-
-
-    <h3>問題4.『before, afterといった擬似要素を使って実装』</h3>
-      <div class="q4">
-            <div class="sns">
-              このページを共有
-            </div>
-      </div>
-
-
-    <h3>問題5.『hoverを使って実装』</h3>
-      <div class="q5">
-            <div class="facebook">
-              <a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebooks" width=50px></a>
-            </div>
-      </div>
-
-
-    <h3>問題6.『bootstrapのcolを使う』</h3>
-    これは飛ばすでok
-
-    <div class="container">
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="row">
-                <div class="col-xs-6"></div>
-                <div class="col-xs-6"></div>
-                <div class="col-xs-6"></div>
-                <div class="col-xs-6"></div>
-            </div>
-        </div>
-        <div class="col-lg-4"></div>
-    </div>
-</div>
+                    </ul>
+                </ul>
+            </ul>
 
 
   </body>
