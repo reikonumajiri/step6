@@ -5,116 +5,160 @@
     <title>frontend中級研修</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <meta name="description" content="frontend中級研修 step2">
+    <meta name="description" content="frontend中級研修 step3">
     <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
-    <h3>問題1.bootstrapのbutton groupのsizingを自分でCSS作成</h3>
-      <div class="q1-1">
-          <div class="btn-group btn-lg clearfix">
-              <input type="radio" name="s3" id="select1" checked="">
-              <label for="select1">Left</label>
-              <input type="radio" name="s3" id="select2" >
-              <label for="select2">Middle</label>
-              <input type="radio" name="s3" id="select3">
-              <label for="select3">Right</label>
-          </div><br/>
 
+    <div class="container">
 
-          <div class="btn-group btn-m clearfix">
-              <input type="radio" name="s3" id="select4" checked="">
-              <label for="select4">Left</label>
-              <input type="radio" name="s3" id="select5">
-              <label for="select5">Middle</label>
-              <input type="radio" name="s3" id="select6">
-              <label for="select6">Right</label>
-          </div><br/>
+      <div class="tabs">
+          <input id="all" type="radio" name="tab_item" checked>
+          <label class="tab_item main" for="all">メイン</label>
 
-          <div class="btn-group btn-s clearfix">
-              <input type="radio" name="s3" id="select7" checked="">
-              <label for="select7">Left</label>
-              <input type="radio" name="s3" id="select8">
-              <label for="select8">Middle</label>
-              <input type="radio" name="s3" id="select9">
-              <label for="select9">Right</label>
-          </div><br/>
+          <input id="social" type="radio" name="tab_item">
+          <label class="tab_item social" for="social">ソーシャル</label>
 
-          <div class="btn-group btn-x clearfix">
-              <input type="radio" name="s3" id="select10" checked="">
-              <label for="select10">Left</label>
-              <input type="radio" name="s3" id="select11">
-              <label for="select11">Middle</label>
-              <input type="radio" name="s3" id="select12">
-              <label for="select12">Right</label>
-          </div><br/>
+          <input id="promotion" type="radio" name="tab_item">
+          <label class="tab_item promotion" for="promotion">プロモーション</label>
       </div>
 
-      <div class="q1-2">
+        <div class="column clearfix">
+              <div class="checkbox column_block">
+                  <input type="checkbox" id="01-A">
+                  <label for="01-A" class="checkbox01 checkbox01_b"></label>
+              </div>
 
-              <div class="alert alert-default" role="alert">
-                Default
+              <div class="starbox column_block">
+                  <input type="checkbox" id="02-A">
+                  <label for="02-A" class="checkbox02"></label>
               </div>
-              <div class="alert alert-primary" role="alert">
-                Primary
-              </div>
-              <div class="alert alert-success" role="alert">
-                Success
-              </div>
-              <div class="alert alert-info" role="alert">
-                Info
-              </div>
-              <div class="alert alert-warning" role="alert">
-                Warning
-              </div>
-              <div class="alert alert-danger" role="alert">
-                Danger
-              </div>
-      </div>
-    <h3>問題2. bootstrapのlabelを自分でCSS作成</h3>
-      <div class="q2-1">
-        1. 以下のスクショを見て、class組みのみを行う<br/>
-            <ul>
-              <li>container</li>
-                <ul>
-                  <li>tab</li>
-                  <li>tab_item</li>
-                  <li>tab_content</li>
-                    <ul>
-                      <li>title</li>
-                      <li>description</li>
-                    </ul>
-                </ul>
-            </ul>
 
-            2. 以下のスクショを見て、class組みのみを行う<br/>
-                <ul>
-                  <li>container</li>
-                    <ul>
-                      <li>column</li>
-                      <li>feature</li>
-                        <ul>
-                          <li>title</li>
-                          <li>description</li>
-                        </ul>
-                    </ul>
-                </ul>
+              <div class="name column_block">
+                reiko
+              </div>
+              <div class="title column_block">
+                【お知らせ】hogehogehogehogehogehogehogehogehogehogehogehogehoge
+              </div>
+              <div class="description column_block">
+                ※このアドレスは送信専用のため、descriptiondescriptiondescriptiondescription
+              </div>
+              <div class="date column_block">
+                16:58
+              </div>
+        </div>
 
-            3. 以下のスクショを見て、class組みのみを行う<br/>
-            <ul>
-              <li>container</li>
-                <ul>
-                  <li>column</li>
-                  <li>innner_pict</li>
-                  <li>innner_topic</li>
-                    <ul>
-                      <li>title</li>
-                      <li>description</li>
-                      <li>publishtime</li>
 
-                    </ul>
-                </ul>
-            </ul>
+
+        <div class="column clearfix">
+              <div class="checkbox column_block">
+                  <input type="checkbox" id="01-B">
+                  <label for="01-B" class="checkbox01"></label>
+              </div>
+
+              <div class="starbox column_block">
+                  <input type="checkbox" id="02-B">
+                  <label for="02-B" class="checkbox02"></label>
+              </div>
+
+              <div class="name column_block">
+                ABC
+              </div>
+              <div class="title column_block">
+                【ご確認ください】明日、ポイントの有効期限が切れます
+              </div>
+              <div class="description column_block">
+                ※このアドレスは送信専用のため、descriptiondescriptiondescriptiondescription
+              </div>
+              <div class="date column_block">
+                18:08
+              </div>
+        </div>
+
+
+        <div class="column clearfix">
+              <div class="checkbox column_block">
+                  <input type="checkbox" id="01-C">
+                  <label for="01-C" class="checkbox01"></label>
+              </div>
+
+              <div class="starbox column_block">
+                  <input type="checkbox" id="02-C">
+                  <label for="02-C" class="checkbox02"></label>
+              </div>
+
+              <div class="name column_block">
+                アイウエオ事務局
+              </div>
+              <div class="title column_block">
+                ご利用ありがとうございます。
+              </div>
+              <div class="description column_block">
+                山田様 先日はアイウエオ通販をご利用いただきまして誠にありがとうございます。
+              </div>
+              <div class="date column_block">
+                20:00
+              </div>
+        </div>
+
+
+        <div class="column clearfix">
+              <div class="checkbox column_block">
+                  <input type="checkbox" id="01-D">
+                  <label for="01-D" class="checkbox01"></label>
+              </div>
+
+              <div class="starbox column_block">
+                  <input type="checkbox" id="02-D">
+                  <label for="02-D" class="checkbox02"></label>
+              </div>
+
+              <div class="name column_block">
+                (株)かきく
+              </div>
+              <div class="title column_block">
+                今週のトピックスをご紹介します！
+              </div>
+              <div class="description column_block">
+                山田様 メモメモメモメモメモメモメモメモメモメモ
+              </div>
+              <div class="date column_block">
+                20:30
+              </div>
+        </div>
+
+
+        <div class="column clearfix">
+              <div class="checkbox column_block">
+                  <input type="checkbox" id="01-E">
+                  <label for="01-E" class="checkbox01"></label>
+              </div>
+
+              <div class="starbox column_block">
+                  <input type="checkbox" id="02-E">
+                  <label for="02-E" class="checkbox02"></label>
+              </div>
+
+              <div class="name column_block">
+                App
+              </div>
+              <div class="title column_block">
+                会員登録ありがとうございました。
+              </div>
+              <div class="description column_block">
+                山田様 メモメモメモメモメモメモメモメモメモメモ
+              </div>
+              <div class="date column_block">
+                20:30
+              </div>
+        </div>
+
+
+  </div>
+
+
+
 
 
   </body>
