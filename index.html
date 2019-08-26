@@ -4,249 +4,251 @@
     <meta charaset="utf-8">
     <title>frontend中級研修</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <meta name="description" content="frontend中級研修 step3">
+
+    <meta name="description" content="frontend中級研修 step6">
     <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
-
-    <div class="container">
-
-
-      <!-- タブ部分 -->
-      <div class="tabs">
-          <input id="main" type="radio" name="tab_item" checked>
-          <label class="tab_item main tab-A is-active" for="main" onmouseover="mOver(0,'info1')" onmouseout="mOut('info1')">
-            メイン
-                <div id="info1" class="info" style ="visibility:hidden;">他のタブに分類されない個人的な会話やメール。</div>
-          </label>
-
-          <input id="social" type="radio" name="tab_item">
-          <label class="tab_item social tab-B" for="social" onmouseover="mOver(0,'info2')" onmouseout="mOut('info2')">
-            ソーシャル
-                <div id="info2" class="info" style ="visibility:hidden;">ソーシャル ネットワーク、メディア共有サイト、その他ソーシャルウェブサイトからのメール。</div>
-          </label>
-
-          <input id="promotion" type="radio" name="tab_item">
-          <label class="tab_item promotion tab-C" for="promotion" onmouseover="mOver(0,'info3')" onmouseout="mOut('info3')">
-            プロモーション
-                <div id="info3" class="info" style ="visibility:hidden;">セール、クーポン、その他のマーケティング メール。</div>
-          </label>
+      <!-- ヘッダー -->
+      <div class="header" id="header">
+        <a href="https://www.github.com" class="text-white f6">Back to GitHub.com</a>
       </div>
 
+      <div class="container">
+          <div class="menu clearfix">
+                  <div class="logo">
+                      <img src="./img/logo.png" alt="logo" title="logo" width="20px" title="The GitHub Blog">
+                      <a href="http://github.blog">The GitHub Blog</a>
+                  </div>
 
-      <!-- タブA -->
-      <div class="tab_content tab-A is-show">
+                  <div class=category>
 
-        <div class="column clearfix">
-              <div class="checkbox column_block">
-                  <input type="checkbox" id="01-A" onclick="chebg('01-A')">
-                  <label for="01-A" class="checkbox01"></label>
-              </div>
-              <div class="starbox column_block">
-                  <input type="checkbox" id="02-A">
-                  <label for="02-A" class="checkbox02"></label>
-              </div>
-              <div class="name column_block">
-                reiko
-              </div>
-              <div class="title column_block">
-                【お知らせ】hogehogehogehogehogehogehogehogehogehogehogehogehoge
-              </div>
-              <div class="description column_block">
-                ※このアドレスは送信専用のため、descriptiondescriptiondescriptiondescription
-              </div>
-              <div class="date column_block">
-                16:58
-              </div>
-        </div>
+                      <div class="category_item">
+                        <ul>
+                              <li><a href="http://github.blog/changelog">Changelog</a>
+                              </li>
+                        </ul>
+                      </div>
 
+                      <div class="category_item">
+                            <ul>
+                                  <li><a href="http://github.blog/changelog" class="category_items">Community</a>
+                                      <ul>
+                                          <li><a href="#" color="#111111">Education</a></li>
+                                          <li><a href="#" color="#111111">Event</a></li>
+                                      </ul>
+                                  </li>
+                            </ul>
+                      </div>
 
+                      <div class="category_item">
+                        <ul>
+                              <li><a href="http://github.blog/changelog">Company</a>
+                              </li>
+                        </ul>
+                      </div>
 
-        <div class="column clearfix">
-              <div class="checkbox column_block">
-                  <input type="checkbox" id="01-B" onclick="chebg('01-B')">
-                  <label for="01-B" class="checkbox01"></label>
-              </div>
-              <div class="starbox column_block">
-                  <input type="checkbox" id="02-B">
-                  <label for="02-B" class="checkbox02"></label>
-              </div>
-              <div class="name column_block">
-                ABC
-              </div>
-              <div class="title column_block">
-                【ご確認ください】明日、ポイントの有効期限が切れます
-              </div>
-              <div class="description column_block">
-                ※このアドレスは送信専用のため、descriptiondescriptiondescriptiondescription
-              </div>
-              <div class="date column_block">
-                18:08
-              </div>
-        </div>
+                      <div class="category_item">
+                        <ul>
+                              <li><a href="http://github.blog/changelog">Engineering</a>
+                              </li>
+                        </ul>
+                      </div>
 
+                      <div class="category_item">
+                        <ul>
+                              <li><a href="http://github.blog/changelog">Enterprise</a>
+                              </li>
+                        </ul>
+                      </div>
 
-        <div class="column clearfix">
-              <div class="checkbox column_block">
-                  <input type="checkbox" id="01-C" onclick="chebg('01-C')">
-                  <label for="01-C" class="checkbox01"></label>
-              </div>
-              <div class="starbox column_block">
-                  <input type="checkbox" id="02-C">
-                  <label for="02-C" class="checkbox02"></label>
-              </div>
-              <div class="name column_block">
-                アイウエオ事務局
-              </div>
-              <div class="title column_block">
-                ご利用ありがとうございます。
-              </div>
-              <div class="description column_block">
-                山田様 先日はアイウエオ通販をご利用いただきまして誠にありがとうございます。
-              </div>
-              <div class="date column_block">
-                20:00
-              </div>
-        </div>
+                      <div class="category_item">
+                        <ul>
+                              <li><a href="http://github.blog/changelog">Product</a>
+                              </li>
+                        </ul>
+                      </div>
+
+                  </div>
+
+                  <div class="search">
+                    <img src="./img/search.png" alt="検索" width="15px"><br/>
+                  </div>
+
+          </div>
 
 
-        <div class="column clearfix">
-              <div class="checkbox column_block">
-                  <input type="checkbox" id="01-D" onclick="chebg('01-D')">
-                  <label for="01-D" class="checkbox01"></label>
-              </div>
-              <div class="starbox column_block">
-                  <input type="checkbox" id="02-D">
-                  <label for="02-D" class="checkbox02"></label>
-              </div>
-              <div class="name column_block">
-                (株)かきく
-              </div>
-              <div class="title column_block">
-                今週のトピックスをご紹介します！
-              </div>
-              <div class="description column_block">
-                山田様 メモメモメモメモメモメモメモメモメモメモ
-              </div>
-              <div class="date column_block">
-                20:30
-              </div>
-        </div>
+          <div class="parent">
+                  <div class="inner inner_right clearfix">
+                      <img src="./img/pict1.png" alt="画像" width="470px"><br/>
+                      <section class="large">
+                            <div class="large_title">
+                              <a href="https://github.com/features" class="link_blue">Github title tit t title tit t title tit t title tit t title tit t</a>
+                            </div>
+                            <div class="publisher">
+                              <img src="./img/cat.png" alt="アイコン" width="30px">
+                              <a href="https://github.com/features" class="name link_gray">Reiko</a>
+                            </div>
+                      </section><br/>
+                  </div>
+
+                  <div class="inner inner_left clearfix">
+                          <section class="middle">
+                                <div class="middle_title">
+                                  <a href="https://github.com/features" class="link_blue">
+                                    blog b blog b blog b blog b blog b blog b blog b blog b blog b blog b blog b blog
+                                  </a>
+                                </div>
+                                <div class="publisher">
+                                  <img src="./img/cat.png" alt="アイコン" width="30px">
+                                  <a href="https://github.com/features" class="name link_gray">Reiko</a>
+                                </div>
+                          </section><br/>
+
+                          <section class="middle">
+                                <div class="middle_title">
+                                  <a href="https://github.com/features" class="link_blue">
+                                    blog b blog b blog b blog b blog b blog b blog b blog b blog b blog b blog b blog
+                                  </a>                                </div>
+                                <div class="publisher">
+                                  <img src="./img/cat.png" alt="アイコン" width="30px">
+                                  <a href="https://github.com/features" class="name link_gray">Reiko</a>
+                                </div>
+                          </section><br/>
+
+                          <section class="middle">
+                                <div class="middle_title">
+                                  <a href="https://github.com/features" class="link_blue">
+                                    blog b blog b blog b blog b blog b blog b blog b blog b blog b blog b blog b blog
+                                  </a>                                </div>
+                                <div class="publisher">
+                                  <img src="./img/cat.png" alt="アイコン" width="30px">
+                                  <a href="https://github.com/features" class="name link_gray">Reiko</a>
+                                </div>
+                          </section><br/>
+                  </div>
+          </div>
 
 
-        <div class="column clearfix">
-              <div class="checkbox column_block">
-                  <input type="checkbox" id="01-E" onclick="chebg('01-E')">
-                  <label for="01-E" class="checkbox01"></label>
-              </div>
-              <div class="starbox column_block">
-                  <input type="checkbox" id="02-E">
-                  <label for="02-E" class="checkbox02"></label>
-              </div>
-              <div class="name column_block">
-                App
-              </div>
-              <div class="title column_block">
-                会員登録ありがとうございました。
-              </div>
-              <div class="description column_block">
-                山田様 メモメモメモメモメモメモメモメモメモメモ
-              </div>
-              <div class="date column_block">
-                20:30
-              </div>
-        </div>
+          <div class="category_panel">
+                  <div class="category_info">
+                      <div class="content_title">
+                        Categories
+                      </div><br/>
+
+                            <div class="category_card clearfix">
+                              <img src="./img/card.png" alt="logo" title="logo" width="150px" title="catrgory">
+                              <p class="category_title">Community</p>
+                              <p class="normal_text">Education, Events, Insights, Open source</p>
+                            </div>
+
+                            <div class="category_card clearfix">
+                              <img src="./img/card.png" alt="logo" title="logo" width="150px" title="catrgory">
+                              <p class="category_title">Community</p>
+                              <p class="normal_text">Education, Events, Insights, Open source</p>
+                            </div>
+
+                            <div class="category_card clearfix">
+                              <img src="./img/card.png" alt="logo" title="logo" width="150px" title="catrgory">
+                              <p class="category_title">Community</p>
+                              <p class="normal_text">Education, Events, Insights, Open source</p>
+                            </div>
+
+                            <div class="category_card clearfix">
+                              <img src="./img/card.png" alt="logo" title="logo" width="150px" title="catrgory">
+                              <p class="category_title">Community</p>
+                              <p class="normal_text">Education, Events, Insights, Open source</p>
+                            </div>
+
+                            <div class="category_card clearfix">
+                              <img src="./img/card.png" alt="logo" title="logo" width="150px" title="catrgory">
+                              <p class="category_title">Community</p>
+                              <p class="normal_text">Education, Events, Insights, Open source</p>
+                            </div>
+                  </div>
+
+          </div>
+
+
+          <div class="post_panel">
+                  <div class="post_title large_title">
+                    All posts
+                  </div>
+
+                  <div class="post_card">
+                          <div class="post_date normal_text clearfix">
+                            <a href="https://github.com/features" class="link_gray">
+                              August 22, 2019
+                            </a>
+                          </div>
+
+                          <div class="post_info clearfix">
+                                  <a href="https://github.com/features" class="normal_text link_gray">Education  </a>
+
+                                <div class="min_title">
+                                  <a href="https://github.com/features" class="link_blue">
+                                    info info info info info info
+                                  </a>
+                                </div>
+
+                                <div class="post_comment normal_text clearfix">
+                                  comment comment comment comment comment comment comment comment comment
+                                  comment comment comment comment comment comment comment comment comment
+                                  comment comment comment comment comment comment comment comment comment
+                                </div>
+
+                                <div class="publisher">
+                                  <img src="./img/cat.png" alt="アイコン" width="30px">
+                                  <a href="https://github.com/features" class="name link_gray">Reiko</a>
+                                </div>
+                          </div>
+                  </div>
+
+                  <div class="post_card">
+                          <div class="post_date normal_text clearfix">
+                            <a href="https://github.com/features" class="link_gray">
+                              August 22, 2019
+                            </a>
+                          </div>
+
+                          <div class="post_info clearfix">
+                                  <a href="https://github.com/features" class="normal_text link_gray">Education  </a>
+
+                                <div class="min_title">
+                                  <a href="https://github.com/features" class="link_blue">
+                                    info info info info info info
+                                  </a>
+                                </div>
+
+                                <div class="post_comment normal_text clearfix">
+                                  comment comment comment comment comment comment comment comment comment comment comment comment
+                                  comment comment comment comment comment comment comment comment comment comment comment comment
+                                  comment comment comment comment comment comment comment comment comment comment comment comment
+                                </div>
+
+                                <div class="publisher">
+                                  <img src="./img/cat.png" alt="アイコン" width="30px">
+                                  <a href="https://github.com/features" class="name link_gray">Reiko</a>
+                                </div>
+                          </div>
+                  </div>
+
+
+                  <br/>
+                  <div class="moreposts">
+                    <p class="moreposts_title">view more posts</p>
+                  </div>
+
+          </div>
+
+
+
     </div>
 
 
-    <!-- タブB -->
-    <div class="tab_content tab-B">
+</body>
 
-      <div class="column clearfix">
-            <div class="checkbox column_block">
-                <input type="checkbox" id="01-AA" onclick="chebg('01-AA')">
-                <label for="01-AA" class="checkbox01"></label>
-            </div>
-            <div class="starbox column_block">
-                <input type="checkbox" id="02-AA">
-                <label for="02-AA" class="checkbox02"></label>
-            </div>
-            <div class="name column_block">
-              reikoBです
-            </div>
-            <div class="title column_block">
-              【Bのお知らせ】hogehogehogehogehogehogehogehogehogehogehogehogehoge
-            </div>
-            <div class="description column_block">
-              ※このアドレスは送信専用のため、descriptiondescriptiondescriptiondescription
-            </div>
-            <div class="date column_block">
-              16:58
-            </div>
-      </div>
-    </div>
-
-    <!-- タブC -->
-    <div class="tab_content tab-C">
-
-      <div class="column clearfix">
-            <div class="checkbox column_block">
-                <input type="checkbox" id="01-AAA" onclick="chebg('01-AAA')">
-                <label for="01-AAA" class="checkbox01"></label>
-            </div>
-            <div class="starbox column_block">
-                <input type="checkbox" id="02-AAA">
-                <label for="02-AAA" class="checkbox02"></label>
-            </div>
-            <div class="name column_block">
-              reikoCです
-            </div>
-            <div class="title column_block">
-              【Cのお知らせ】hogehogehogehogehogehogehogehogehogehogehogehogehoge
-            </div>
-            <div class="description column_block">
-              ※このアドレスは送信専用のため、descriptiondescriptiondescriptiondescription
-            </div>
-            <div class="date column_block">
-              16:58
-            </div>
-      </div>
-
-      <div class="column clearfix">
-            <div class="checkbox column_block">
-                <input type="checkbox" id="01-BBB" onclick="chebg('01-BBB')">
-                <label for="01-BBB" class="checkbox01"></label>
-            </div>
-            <div class="starbox column_block">
-                <input type="checkbox" id="02-BBB">
-                <label for="02-BBB" class="checkbox02"></label>
-            </div>
-            <div class="name column_block">
-              プレスリリースが公開されました
-            </div>
-            <div class="title column_block">
-              【プレスリリース】releasereleasereleasereleasereleasereleasereleaserelease
-            </div>
-            <div class="description column_block">
-              ※このアドレスは送信専用のため、descriptiondescriptiondescriptiondescription
-            </div>
-            <div class="date column_block">
-              16:58
-            </div>
-      </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-  </body>
 </html>
