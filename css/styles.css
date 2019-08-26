@@ -46,6 +46,9 @@ a {
 body {
   font-family:Inter UI,sans-serif;
 }
+.font_set {
+  font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
 .clearfix:after{
   clear: both;
   content: "";
@@ -61,7 +64,6 @@ body {
 .menu{
   /* background-color: skyblue; */
   display: inline-block;
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
   font-size: 14px;
   line-height: 30px;
   padding: 10px;
@@ -128,7 +130,7 @@ body {
 .publisher {
   float: left;
   font-size: 12px;
-  margin: 10px 0;
+  margin: 15px 0;
   position:relative;
 }
 .publisher img {
@@ -151,9 +153,7 @@ body {
   padding: 5px 0px;
   text-align: left;
 }
-.large {
-  padding: 10px 12px;
-}
+
 .large_title {
   font-size: 36px;
   font-weight: bold;
@@ -178,7 +178,7 @@ body {
   float: left;
   margin: 70px 10px 10px 10px;
   height: 260px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   text-align: center;
   width: 160px;
 }
@@ -189,10 +189,19 @@ body {
 .category_title {
   font-weight: bold;
   text-align: left;
-  padding: 0px 5px;
 }
 .category_title::after {
   background:url(../img/allow.png) no-repeat;
+	background-size:contain;
+	content:"";
+	display:inline-block;
+  height:13px;
+  margin: 8px;
+  vertical-align: middle;
+	width:13px;
+}
+.category_title:hover::after {
+  background:url(../img/allow_blue.png) no-repeat;
 	background-size:contain;
 	content:"";
 	display:inline-block;
@@ -224,7 +233,6 @@ body {
 }
 .post_date {
   float: left;
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
   width: 250px;
 }
 .post_info {
@@ -312,6 +320,9 @@ body {
   padding: 10px;
   text-align: left;
 }
+.sns-g {
+  padding: 5px;
+}
 .twitter::before {
   background:url(../img/twitter.png) no-repeat;
   background-size:contain;
@@ -332,12 +343,10 @@ body {
   vertical-align: middle;
 	width:11px;
 }
-
 .content_title {
   border-bottom: dotted 3px #d1d5da;
   color: #676e76;
   display:inline-block;
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
   font-size: 18px;
   margin-bottom: 16px;
 }
@@ -347,7 +356,6 @@ body {
 }
 .footer_panel {
   background-color: #fafbfc;
-
 }
 .post {
   /* background-color: palegreen; */
